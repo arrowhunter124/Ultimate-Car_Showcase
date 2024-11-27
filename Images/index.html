@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A showcase of the latest and most iconic cars">
+    <title>Ultimate Cars Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Ultimate Cars Showcase</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#showcase">Showcase</a></li>
+                    <li><a href="luxury-cars.html">Luxury Cars</a></li> <!-- New link for luxury cars -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <h2>Welcome to the Ultimate Cars Showcase!</h2>
+            <p>Explore the world of High-performance cars and iconic classics.</p>
+            <img src="Images/Logo.jpeg" alt="Luxury Car" class="header-image">
+        </div>
+    </section>
+
+    <!-- Car Showcase Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <h2>Featured Cars</h2>
+            <div class="car-gallery">
+                <div class="car" onclick="openModal('car1')">
+                    <img src="Images/La.jpg" alt="Car 1">
+                    <h3>Ferrari LaFerrari</h3>
+                    <p>The Ferrari LaFerrari is a hybrid hypercar with an awe-inspiring performance and futuristic design.</p>
+                </div>
+                <div class="car" onclick="openModal('car2')">
+                    <img src="Images/Aventador.jpg" alt="Car 2">
+                    <h3>Lamborghini Aventador</h3>
+                    <p>With its bold styling and insane power, the Lamborghini Aventador is a dream car for enthusiasts.</p>
+                </div>
+                <div class="car" onclick="openModal('car3')">
+                    <img src="Images/911.jpg" alt="Car 3">
+                    <h3>Porsche 911</h3>
+                    <p>The Porsche 911 is the perfect balance of luxury and performance, known for its timeless design.</p>
+                </div>
+                <!-- More cars -->
+                <div class="car" onclick="openModal('car4')">
+                    <img src="Images/P1.jpg" alt="Car 4">
+                    <h3>McLaren P1</h3>
+                    <p>McLaren P1 is a plug-in hybrid sports car that represents the future of automotive technology.</p>
+                </div>
+                <div class="car" onclick="openModal('car5')">
+                    <img src="Images/Chiron.jpg" alt="Car 5">
+                    <h3>Bugatti Chiron</h3>
+                    <p>The Bugatti Chiron is the ultimate hypercar, pushing the boundaries of speed, luxury, and innovation.</p>
+                </div>
+                <div class="car" onclick="openModal('car6')">
+                    <img src="Images/DB11.jpg" alt="Car 6">
+                    <h3>Aston Martin DB11</h3>
+                    <p>The Aston Martin DB11 combines timeless British elegance with cutting-edge performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Car Details -->
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="carModalTitle">Car Name</h3>
+            <div id="carModalImages" class="carousel">
+                <!-- Images will be dynamically added here -->
+            </div>
+            <p id="carModalDescription">Car description goes here.</p>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ultimate Cars Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Home Section */
+.home {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.home .container {
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.home .header-image {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Showcase Section */
+.showcase {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.showcase .container {
+    text-align: center;
+}
+
+.showcase h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.car-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.car img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.car p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.car:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contact .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Make the image container a flexbox */
+/* Make the image container a flexbox */
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    margin-bottom: 20px;     /* Space between image and content */
+}
+
+/* Styling for the car image */
+.car-image {
+    width: 80%; /* Adjust the width to 80% of the container */
+    max-width: 600px; /* Ensure the image doesn't exceed 600px */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any inline styling */
+    border: 5px solid #171717; /* White border around the image */
+    border-radius: 15px; /* Rounded corners for a luxurious look */
+    box-shadow: 0px 4px 15px rgba(6, 0, 0, 0.3); /* Subtle shadow around the image */
+}
+
+
